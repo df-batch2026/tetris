@@ -9,6 +9,11 @@ permissions:
   contents: read
 
 jobs:
+  dummy-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
   quality-check:
     runs-on: ubuntu-latest # Runner in github action.
 
