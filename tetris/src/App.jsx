@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-// import "./App.css";
+import "./App.css";
 
-const shapes = [
-  [[1, 1, 1, 1]],
-  [[1, 1], [1, 1]],
-  [[0, 1, 0], [1, 1, 1]],
-  [[1, 0, 0], [1, 1, 1]],
-  [[0, 1, 1], [1, 1, 0]],
-];
+// const shapes = [
+//   [[1, 1, 1, 1]],
+//   [[1, 1], [1, 1]],
+//   [[0, 1, 0], [1, 1, 1]],
+//   [[1, 0, 0], [1, 1, 1]],
+//   [[0, 1, 1], [1, 1, 0]],
+// ];
 
 const randomPiece = () => ({
   shape: shapes[Math.floor(Math.random() * shapes.length)],
