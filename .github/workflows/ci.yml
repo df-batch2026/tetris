@@ -16,6 +16,9 @@ jobs:
         uses: actions/checkout@v4
   quality-check:
     runs-on: ubuntu-latest # Runner in github action.
+    defaults:
+      run:
+        working-directory: tetris
 
     steps:
       - name: Checkout code
@@ -26,6 +29,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
+          cache-dependency-path: tetris/package-lock.json
 
       - name: Install dependencies
         run: npm ci
