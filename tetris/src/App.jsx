@@ -93,6 +93,14 @@ export default function App() {
       <button onClick={() => { setBoard(emptyBoard()); setPiece(randomPiece()); setScore(0); }}>
         Restart
       </button>
+      <div className="move-controls" aria-label="Block movement controls">
+        <button type="button" aria-label="Move block left" onClick={() => move(-1, 0)}>
+          ←
+        </button>
+        <button type="button" aria-label="Move block right" onClick={() => move(1, 0)}>
+          →
+        </button>
+      </div>
     </main>
   );
 }
