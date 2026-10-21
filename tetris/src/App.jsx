@@ -79,7 +79,7 @@ export default function App() {
 
   return (
     <main>
-      <h1>⚡ TETRIS</h1>
+      <h1>⚡ Arcade TETRIS</h1>
       <p>Score: {score}</p>
       <div className="board">
         {cells.flatMap((row, y) =>
