@@ -9,6 +9,7 @@ const shapes = [
   [[0, 1, 1], [1, 1, 0]],
 ];
 
+
 const randomPiece = () => ({
   shape: shapes[Math.floor(Math.random() * shapes.length)],
   x: 3, y: 0,
