@@ -42,4 +42,18 @@ button {
   font-weight: bold;
 }
 
+.move-controls {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 20px auto 0;
+}
+
+.move-controls button {
+  min-width: 72px;
+  min-height: 52px;
+  font-size: 24px;
+  touch-action: manipulation;
+}
+
 /* button:hover { background: #7c3aed; } */
